@@ -72,6 +72,9 @@ function Tweetbox({ setTweets }: Props) {
     setImageUrlBoxIsOpen(false);
   };
 
+  useEffect(() => {
+    postTweet();
+  }, [handleSubmit]);
   return (
     <div className="flex space-x-2 p-5">
       <img
