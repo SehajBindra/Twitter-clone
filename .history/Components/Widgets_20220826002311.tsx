@@ -24,7 +24,7 @@ function Widgets() {
           placeholder="Search twitter"
         />
       </div>
-      <div className="ml-2  overflow-y-visible">
+      <div className="ml-2 overflow-scroll">
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="GameOfThrones"

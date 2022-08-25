@@ -27,7 +27,7 @@ const Home = ({ tweets }: Props) => {
 
   if (status === "authenticated") {
     return (
-      <div className="mx-auto max-h-screen overflow-y-hidden   lg:max-w-7xl  ">
+      <div className="mx-auto max-h-screen overflow-y-scroll   lg:max-w-7xl  ">
         <Head>
           <title> Home / Twitter </title>
           <link

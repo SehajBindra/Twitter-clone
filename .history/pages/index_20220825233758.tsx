@@ -1,4 +1,4 @@
-import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 
 import Feed from "../Components/Feed";
@@ -51,7 +51,7 @@ const Home = ({ tweets }: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const tweets = await fetchTweets();
   return {
     props: {

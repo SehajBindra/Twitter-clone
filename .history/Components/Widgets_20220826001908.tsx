@@ -24,26 +24,25 @@ function Widgets() {
           placeholder="Search twitter"
         />
       </div>
-      <div className="ml-2  overflow-y-visible">
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="GameOfThrones"
-          options={{ height: 1000 }}
-        />
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="diljitdosanjh"
-          options={{ height: 500 }}
-        />
-      </div>
 
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="diljitdosanjh"
+        options={{ height: 500 }}
+      />
       {/* <TwitterFollowButton screenName={"Stranger_Things"} /> */}
+
+      {/* <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="GameOfThrones"
+        options={{ height: 1000 }}
+      />
 
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="Marvel"
         options={{ height: 1000 }}
-      />
+      /> */}
     </div>
   );
 }
